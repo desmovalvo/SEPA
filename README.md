@@ -11,7 +11,7 @@ SEPA is a publish-subscribe architecture designed to support information level i
 ## Configuration
 
 The SEPA engine uses two JSON configuration files: `engine.jpar` and `endpoint.jpar` (included in the [SEPA Engine release](https://github.com/arces-wot/SEPA/releases/download/0.7.0/engine-0.7.0.rar) distribution). 
-The default version of `endpoint.jpar` configures the engine to use use a local running instance of Blazegraph as [SPARQL 1.1 Protocol Service](https://www.w3.org/TR/sparql11-protocol/).
+The default version of `endpoint.jpar` configures the engine to use use a local running instance of Blazegraph as [SPARQL 1.1 Protocol Service](http://www.w3.org/TR/sparql11-protocol.html).
 ```json
 {
 	"parameters": {
@@ -34,7 +34,7 @@ The default version of `endpoint.jpar` configures the engine to use use a local 
 	}
 }
 ```
-The default version of  `engine.jpar` configures the engine to listen for for incoming [SPARQL 1.1 SE Protocol](https://wot.arces.unibo.it/TR/sparql11-se-protocol/) requests at the following URLs:
+The default version of  `engine.jpar` configures the engine to listen for for incoming [SPARQL 1.1 SE Protocol](http://wot.arces.unibo.it/TR/sparql11-se-protocol.html) requests at the following URLs:
 
 1. Query: http://localhost:8000/query
 2. Update: http://localhost:8000/update
@@ -90,7 +90,7 @@ The SEPA engine is also distributed with a default [JMX](http://www.oracle.com/t
 
 SEPA has been inspired and influenced by [Smart-M3](https://sourceforge.net/projects/smart-m3/). SEPA authors have been involved in the development of Smart-M3 since its [origin](https://artemis-ia.eu/project/4-sofia.html). 
 
-The main differences beetween SEPA and Smart-M3 are the protocol (now compliant with the [SPARQL 1.1 Protocol](https://www.w3.org/TR/sparql11-protocol/)) and the introduction of a security layer (based on TLS and JSON Web Token for client authentication). 
+The main differences beetween SEPA and Smart-M3 are the protocol (now compliant with the [SPARQL 1.1 Protocol](http://www.w3.org/TR/sparql11-protocol.html)) and the introduction of a security layer (based on TLS and JSON Web Token for client authentication). 
 
 All the SEPA software components have been implemented from scratch.
 
